@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.config;
+package com.who.shuk.JWTAuth.Service;
 
 import com.who.shuk.JWTAuth.Service.JwtService;
 import jakarta.servlet.FilterChain;
@@ -13,11 +13,12 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
-@Component
+@Service
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
