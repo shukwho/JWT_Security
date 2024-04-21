@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.auth;
+package com.who.shuk.JWTAuth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RegisterRequest {
-    private String firstName;
-    private String lastName;
+public class AuthenticationRequest {
+
     private String email;
     private String password;
-
 }

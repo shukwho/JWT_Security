@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.demo;
+package com.who.shuk.JWTAuth.Controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

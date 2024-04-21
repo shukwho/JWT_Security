@@ -1,8 +1,12 @@
-package com.who.shuk.JWTAuth.auth;
+package com.who.shuk.JWTAuth.Controllers;
 
+import com.who.shuk.JWTAuth.model.AuthenticationRequest;
+import com.who.shuk.JWTAuth.model.AuthenticationResponse;
+import com.who.shuk.JWTAuth.Service.AuthenticationService;
+import com.who.shuk.JWTAuth.model.RegistrationRequest;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,9 +17,12 @@ public class AuthenticationController {
 
     private final AuthenticationService service;
     @PostMapping("/register")
-    public ResponseEntity<AuthenticationResponse>  register(@RequestBody RegisterRequest request){
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public ResponseEntity<AuthenticationResponse>  register(
+            @RequestBody @Valid RegistrationRequest request){
         System.out.println("Inside register method");
-        return ResponseEntity.status(HttpStatus.CREATED).body(service.register(request));
+        service.register(request);
+        return ResponseEntity.accepted().build();
     }
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse>  authenticate(@RequestBody AuthenticationRequest request){

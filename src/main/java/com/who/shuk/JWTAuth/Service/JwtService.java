@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.config;
+package com.who.shuk.JWTAuth.Service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

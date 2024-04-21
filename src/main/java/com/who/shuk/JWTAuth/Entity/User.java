@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.user;
+package com.who.shuk.JWTAuth.Entity;
 
 
 import jakarta.persistence.*;
