@@ -1,9 +1,9 @@
 package com.who.shuk.JWTAuth.Controllers;
 
-import com.who.shuk.JWTAuth.model.AuthenticationRequest;
-import com.who.shuk.JWTAuth.model.AuthenticationResponse;
+import com.who.shuk.JWTAuth.Model.AuthenticationRequest;
+import com.who.shuk.JWTAuth.Model.AuthenticationResponse;
 import com.who.shuk.JWTAuth.Service.AuthenticationService;
-import com.who.shuk.JWTAuth.model.RegistrationRequest;
+import com.who.shuk.JWTAuth.Model.RegistrationRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

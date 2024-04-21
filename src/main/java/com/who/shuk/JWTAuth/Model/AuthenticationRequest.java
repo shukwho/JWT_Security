@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.model;
+package com.who.shuk.JWTAuth.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

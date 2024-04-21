@@ -1,4 +1,4 @@
-package com.who.shuk.JWTAuth.model;
+package com.who.shuk.JWTAuth.Model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
