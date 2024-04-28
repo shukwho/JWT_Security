@@ -28,10 +28,11 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .cors(Customizer.withDefaults())
-                //.csrf(csrf -> csrf.disable())
-                .csrf(AbstractHttpConfigurer::disable)
+                .csrf(csrf -> csrf.disable())
+                //.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(request->
                         request.requestMatchers(
+                                        "/demo/**",
                                 "/auth/**",
                                         "/v2/api-docs",
                                         "/v3/api-docs",
